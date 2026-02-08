@@ -8,7 +8,9 @@ import java.sql.SQLException;
 
 public class DBUtil {
 
-	private final String URL = "jdbc:mysql://localhost:3306/event_management";
+	private final String URL =
+		    "jdbc:mysql://host.docker.internal:3306/event_management?useSSL=false&serverTimezone=UTC";
+
 
 	private final String USERNAME = "root";
 
